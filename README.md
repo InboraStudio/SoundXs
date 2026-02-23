@@ -25,8 +25,7 @@
   </a>
 </p>
 
-<img width="1050" height="600" alt="SoundXs" src="https://github.com/user-attachments/assets/84e49329-16d3-47a2-8f81-c6ebef2f42c5" />
-
+<img width="1050" height="600" alt="SoundXs" src="https://github.com/user-attachments/assets/2d4c412d-b0b9-43de-9e53-19acc383e987" />
 
 
 <p><em>A professional-grade, real-time audio processing engine for Windows 10/11.<br>
