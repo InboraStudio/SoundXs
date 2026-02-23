@@ -1,0 +1,247 @@
+/* ═══════════════════════════════════════════════════════
+   SoundXs  —  SOFT-DARK PROFESSIONAL THEME
+   Background : #000000   Card : #0D0D0D   Accent : #FFFFFF
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Global ──────────────────────────────────────────── */
+QMainWindow, QScrollArea, #centralWidget {
+    background-color: #000000;
+}
+
+QWidget {
+    outline: none;
+    color: #A0A0A0;
+    font-family: "Segoe UI", "Inter", sans-serif;
+    font-size: 13px;
+}
+
+/* ── Scroll area ─────────────────────────────────────── */
+QScrollArea { background: #000000; border: none; }
+
+/* ── Cards ───────────────────────────────────────────── */
+QWidget#card {
+    background-color: #141414;
+    border: 1px solid #222222;
+    border-radius: 12px;
+}
+
+/* ── Header ──────────────────────────────────────────── */
+QLabel#appTitle {
+    font-size: 23px;
+    font-weight: 800;
+    color: #FFFFFF;
+    letter-spacing: -0.5px;
+}
+
+QLabel#tagline {
+    font-size: 9px;
+    color: #383838;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ── Section headings ────────────────────────────────── */
+QLabel#sectionTitle {
+    font-size: 10px;
+    font-weight: 800;
+    color: #383838;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+    border: none; /* Removed the dark line */
+}
+
+/* ── Field labels (left column of every row) ─────────── */
+QLabel#fieldLabel {
+    color: #555555;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ── dB readout pill ─────────────────────────────────── */
+QLabel#dbLabel {
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    background: transparent;
+    padding: 0;
+}
+
+/* ── Footer ──────────────────────────────────────────── */
+QLabel#footer {
+    color: #282828;
+    font-size: 10px;
+}
+
+/* ══════════════════════════════════════════════════════
+   COMBO BOXES  —  no drop-down button, only a chevron
+   ══════════════════════════════════════════════════════ */
+QComboBox#deviceCombo {
+    background-color: #1E1E1E;   /* clearly visible gray fill */
+    color: #D8D8D8;
+    border: 1px solid #2E2E2E;
+    border-radius: 6px;
+    padding: 5px 10px;
+    min-height: 28px;
+}
+
+QComboBox#deviceCombo:hover {
+    border-color: #444444;
+    background-color: #252525;
+}
+
+/* Invisible drop-down button — only the chevron survives */
+QComboBox#deviceCombo::drop-down {
+    width: 22px;
+    border: none;
+    background: transparent;
+    subcontrol-position: right center;
+}
+
+/* CSS-border triangle chevron */
+QComboBox#deviceCombo::down-arrow {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #666666;
+}
+
+QComboBox#deviceCombo::down-arrow:hover {
+    border-top-color: #AAAAAA;
+}
+
+/* Popup list */
+QComboBox QAbstractItemView {
+    background-color: #1E1E1E;
+    color: #D8D8D8;
+    border: 1px solid #2E2E2E;
+    border-radius: 6px;
+    selection-background-color: #2A2A2A;
+    selection-color: #FFFFFF;
+    outline: none;
+    padding: 4px;
+}
+
+/* ══════════════════════════════════════════════════════
+   SLIDERS  —  thin track, clean white ball, no border
+   ══════════════════════════════════════════════════════ */
+QSlider#dspSlider {
+    height: 30px;
+}
+
+QSlider#dspSlider::groove:horizontal {
+    height: 2px;
+    background: #1C1C1C;
+    border-radius: 1px;
+}
+
+QSlider#dspSlider::sub-page:horizontal {
+    background: #FFFFFF;
+    border-radius: 1px;
+}
+
+QSlider#dspSlider::add-page:horizontal {
+    background: #1C1C1C;
+    border-radius: 1px;
+}
+
+QSlider#dspSlider::handle:horizontal {
+    width: 12px;
+    height: 12px;
+    margin: -5px 0;
+    background: #FFFFFF;
+    border-radius: 6px;
+    /* No border — clean circle */
+}
+
+QSlider#dspSlider::handle:horizontal:hover {
+    background: #CCCCCC;
+}
+
+QSlider#dspSlider::handle:horizontal:pressed {
+    background: #AAAAAA;
+}
+
+/* ══════════════════════════════════════════════════════
+   BUTTONS
+   ══════════════════════════════════════════════════════ */
+QPushButton#loopbackBtn {
+    background-color: #1A1A1A;
+    color: #888888;
+    border: 1px solid #2A2A2A;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 16px;
+}
+
+QPushButton#loopbackBtn:hover {
+    background-color: #222222;
+    border-color: #333333;
+    color: #BBBBBB;
+}
+
+QPushButton#loopbackBtn:checked {
+    background-color: #101820;
+    color: #00CCFF;
+    border: 1px solid #004466;
+}
+
+QPushButton#loopbackBtn:checked:hover {
+    background-color: #152230;
+    border-color: #006688;
+}
+
+/* ══════════════════════════════════════════════════════
+   PEAK METER
+   ══════════════════════════════════════════════════════ */
+QProgressBar#peakMeter,
+QProgressBar#peakMeterWarn,
+QProgressBar#peakMeterClip {
+    background-color: #0A0A0A;
+    border: none;
+    border-radius: 2px;
+}
+
+QProgressBar#peakMeter::chunk { 
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+        stop:0 #004466, stop:0.7 #00CCFF, stop:1 #00F2FF);
+    border-radius: 2px; 
+}
+QProgressBar#peakMeterWarn::chunk { 
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, 
+        stop:0 #006688, stop:1 #50E6FF);
+    border-radius: 2px; 
+}
+QProgressBar#peakMeterClip::chunk { 
+    background: #FFFFFF; 
+    border-radius: 2px; 
+}
+
+/* ── Scrollbar ───────────────────────────────────────── */
+QScrollBar:vertical {
+    background: transparent;
+    width: 8px;
+    margin: 4px 0 4px 0;
+}
+QScrollBar::handle:vertical {
+    background: #1A1A1A;
+    border-radius: 4px;
+    min-height: 40px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #252525;
+}
+QScrollBar::handle:vertical:pressed {
+    background: #333333;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: transparent;
+}

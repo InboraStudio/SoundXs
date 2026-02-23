@@ -1,0 +1,126 @@
+[1/6] Automatic MOC for target SoundXs
+[2/5] Automatic RCC for resources/resources.qrc
+[3/5] Building CXX object CMakeFiles/SoundXs.dir/SoundXs_autogen/3YJK5W5UP7/qrc_resources.cpp.obj
+[4/5] Building CXX object CMakeFiles/SoundXs.dir/src/MainWindow.cpp.obj
+In file included from D:/SoundXs/include/MainWindow.h:10,
+                 from D:/SoundXs/src/MainWindow.cpp:1:
+D:/SoundXs/include/DeviceManager.h:7: warning: "WIN32_LEAN_AND_MEAN" redefined
+    7 | #define WIN32_LEAN_AND_MEAN
+      | 
+<command-line>: note: this is the location of the previous definition
+D:/SoundXs/include/DeviceManager.h:8: warning: "NOMINMAX" redefined
+    8 | #define NOMINMAX
+      | 
+In file included from D:/QTx/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:679,
+                 from D:/QTx/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits:38,
+                 from D:/QTx/6.10.2/mingw_64/include/QtCore/qglobal.h:13,
+                 from D:/QTx/6.10.2/mingw_64/include/QtGui/qtguiglobal.h:7,
+                 from D:/QTx/6.10.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h:8,
+                 from D:/QTx/6.10.2/mingw_64/include/QtWidgets/qmainwindow.h:8,
+                 from D:/QTx/6.10.2/mingw_64/include/QtWidgets/QMainWindow:1,
+                 from D:/SoundXs/include/MainWindow.h:2:
+D:/QTx/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:45: note: this is the location of the previous definition
+   45 | #define NOMINMAX 1
+      | 
+[5/5] Linking CXX executable SoundXs.exe; Running windeployqt...
+Adding local dependencyD:/SoundXs/build/libgcc_s_seh-1.dll
+Adding local dependencyD:/SoundXs/build/libwinpthread-1.dll
+Adding local dependencyD:/SoundXs/build/libstdc++-6.dll
+D:\SoundXs\build\SoundXs.exe 64 bit, release executable
+Adding in plugin type generic for module: Qt6Gui
+Adding Qt6Network for qtuiotouchplugin.dll from plugin type: generic
+Adding in plugin type iconengines for module: Qt6Gui
+Adding Qt6Svg for qsvgicon.dll from plugin type: iconengines
+Adding in plugin type imageformats for module: Qt6Gui
+Adding in plugin type networkinformation for module: Qt6Network
+Adding in plugin type platforms for module: Qt6Gui
+Adding in plugin type styles for module: Qt6Widgets
+Adding in plugin type tls for module: Qt6Network
+Skipping plugin qopensslbackend.dll. Use -force-openssl or specify -openssl-root if you want to use it.
+Performing additional pass of finding Qt plugins due to updated Qt module list: Qt6Core Qt6Gui Qt6Network Qt6Svg Qt6Widgets
+Adding in plugin type generic for module: Qt6Gui
+Adding in plugin type iconengines for module: Qt6Gui
+Adding in plugin type imageformats for module: Qt6Gui
+Adding in plugin type networkinformation for module: Qt6Network
+Adding in plugin type platforms for module: Qt6Gui
+Adding in plugin type styles for module: Qt6Widgets
+Adding in plugin type tls for module: Qt6Network
+Skipping plugin qopensslbackend.dll. Use -force-openssl or specify -openssl-root if you want to use it.
+Direct dependencies: Qt6Core Qt6Gui Qt6Widgets
+All dependencies   : Qt6Core Qt6Gui Qt6Widgets
+To be deployed     : Qt6Core Qt6Gui Qt6Network Qt6Svg Qt6Widgets
+Qt6Core.dll is up to date.
+Qt6Gui.dll is up to date.
+Qt6Network.dll is up to date.
+Qt6Svg.dll is up to date.
+Qt6Widgets.dll is up to date.
+opengl32sw.dll is up to date.
+D3Dcompiler_47.dll is up to date.
+dxcompiler.dll is up to date.
+libgcc_s_seh-1.dll is up to date.
+libstdc++-6.dll is up to date.
+libwinpthread-1.dll is up to date.
+qtuiotouchplugin.dll is up to date.
+qsvgicon.dll is up to date.
+qgif.dll is up to date.
+qico.dll is up to date.
+qjpeg.dll is up to date.
+qsvg.dll is up to date.
+qnetworklistmanager.dll is up to date.
+qwindows.dll is up to date.
+qmodernwindowsstyle.dll is up to date.
+qcertonlybackend.dll is up to date.
+qschannelbackend.dll is up to date.
+Creating qt_ar.qm...
+Creating qt_bg.qm...
+Creating qt_ca.qm...
+Creating qt_cs.qm...
+Creating qt_da.qm...
+Creating qt_de.qm...
+Creating qt_en.qm...
+Creating qt_es.qm...
+Creating qt_fa.qm...
+Creating qt_fi.qm...
+Creating qt_fr.qm...
+Creating qt_gd.qm...
+
+Creating qt_he.qm...
+
+Creating qt_hr.qm...
+
+Creating qt_hu.qm...
+
+Creating qt_it.qm...
+
+Creating qt_ja.qm...
+
+Creating qt_ka.qm...
+
+Creating qt_ko.qm...
+
+Creating qt_lg.qm...
+
+Creating qt_lv.qm...
+
+Creating qt_nl.qm...
+
+Creating qt_nn.qm...
+
+Creating qt_pl.qm...
+
+Creating qt_pt_BR.qm...
+
+Creating qt_ru.qm...
+
+Creating qt_sk.qm...
+
+Creating qt_sv.qm...
+
+Creating qt_tr.qm...
+
+Creating qt_uk.qm...
+
+Creating qt_zh_CN.qm...
+
+Creating qt_zh_TW.qm...
+
